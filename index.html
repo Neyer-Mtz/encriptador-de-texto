@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon-32x32.png">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <a href="#" rel="">
+            <img src="./img/Logo.png" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+
+    <!--Sección Principal-->
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador__aviso">
+                <img src="./img/bi_exclamation-circle-fill.png" alt="Imagen Aviso" class="img__aviso">
+                <p class="texto__aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador__contenedor">
+                <button type="submit" class="btn__encriptar">Encriptar</button>
+                <button type="submit" class="btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <div class="tarjeta__contenedor">
+                <img src="./img/Muñeco.png" alt="Imagen Muñeco" class="img__muñeco">
+                <p class="texto__uno">Ningún mensaje fue encontrado</p>
+                <p class="texto__dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn__copiar">Copiar</button>
+        </section>
+    </main>
+    
+    <!--Pie de pagina-->
+    <footer>
+        <p class="copyright">&copy; 2024 - Encriptador de Texto - Design by @Neyer.Mtz</p>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
